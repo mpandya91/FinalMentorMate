@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tab_home"
+        android:icon="@drawable/insta_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/tab_doubt"
+        android:icon="@drawable/ic_doubts"
+        android:title="Doubt" />
+    <item
+        android:id="@+id/tab_chat"
+        android:icon="@drawable/insta_messager"
+        android:title="Chat" />
+    <item
+        android:id="@+id/tab_profile"
+        android:icon="@drawable/ic_outline_person_24"
+        android:title="Profile" />
+
+</menu>

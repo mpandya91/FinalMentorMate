@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "131714430990",
+    "project_id": "finalmentormate",
+    "storage_bucket": "finalmentormate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131714430990:android:f62e399915248e779de45f",
+        "android_client_info": {
+          "package_name": "com.example.finalmentormate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131714430990-9on0khup6i7m9f616fn38qc21nh8ep92.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnBkuWUK6bflCcD_Ey3elt1XXkcuYzAOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131714430990-9on0khup6i7m9f616fn38qc21nh8ep92.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
