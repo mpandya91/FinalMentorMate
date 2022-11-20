@@ -25,7 +25,6 @@ public class AddNewReply extends AppCompatActivity {
     FirebaseAuth auth = getInstance();
     FirebaseUser user = auth.getCurrentUser();
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

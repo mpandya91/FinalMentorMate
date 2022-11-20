@@ -5,14 +5,24 @@ import android.os.Parcelable;
 
 public class PostModel implements Parcelable {
 
+    String postid;
     String id;
     String username;
     String image;
 
-    public PostModel(String id, String username, String image) {
+    public PostModel(String id, String postid, String username, String image) {
         this.id = id;
+        this.postid = postid;
         this.username = username;
         this.image = image;
+    }
+
+    public String getPostid() {
+        return postid;
+    }
+
+    public void setPostid(String postid) {
+        this.postid = postid;
     }
 
     public String getId() {

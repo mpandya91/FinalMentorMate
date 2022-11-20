@@ -174,6 +174,7 @@ public class home extends Fragment {
             @Override
             public void onClick(View view) {
                 AddPost(rootView);
+                getAllPosts();
             }
         });
 
@@ -205,6 +206,7 @@ public class home extends Fragment {
         if (requestCode==100 && data!=null && data.getData()!=null){
             imageUri = data.getData();
             uploadPicture();
+            return;
         }
     }
 
@@ -225,19 +227,21 @@ public class home extends Fragment {
                         AddData();
                         Toast.makeText(context, "Task Completed Successfully...", Toast.LENGTH_SHORT).show();
                         progressDialog.dismiss();
+                        return;
                     }
                 });
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(context, "Failed...😔", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Failed: "+e.getMessage(), Toast.LENGTH_SHORT).show();
                 progressDialog.dismiss();
             }
         });
     }
 
     private void AddData() {
+        postModel.setPostid(pid);
         postModel.setUsername(fa.getCurrentUser().getEmail());
         postModel.setId(id);
         dbref.child(pid).setValue(postModel);
