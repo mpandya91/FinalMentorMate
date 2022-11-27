@@ -174,7 +174,6 @@ public class home extends Fragment {
             @Override
             public void onClick(View view) {
                 AddPost(rootView);
-                getAllPosts();
             }
         });
 
@@ -184,7 +183,6 @@ public class home extends Fragment {
                 startActivity(new Intent(context, com.example.finalmentormate.askdoubt.class));
             }
         });
-
         return rootView;
     }
 

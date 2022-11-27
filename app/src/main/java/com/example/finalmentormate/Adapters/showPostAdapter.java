@@ -53,8 +53,10 @@ public class showPostAdapter extends RecyclerView.Adapter<showPostAdapter.ViewHo
                 .load(postModel.getImage())
                 .into(holder.imagepost);
 
-        isLikes(postModel.getPostid(), holder.like);
-        isDislike(postModel.getPostid(), holder.dislike);
+        if (postModel.getPostid()!=null) {
+            isLikes(postModel.getPostid(), holder.like);
+            isDislike(postModel.getPostid(), holder.dislike);
+        }
 
         holder.like.setOnClickListener(new View.OnClickListener() {
             @Override
